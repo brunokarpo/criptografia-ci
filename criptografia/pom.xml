@@ -8,16 +8,15 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>entidades</artifactId>
-
-	<name>Criptografia - Entidades</name>
+	<artifactId>criptografia</artifactId>
+	<name>Criptografia - Cripto</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
 	<build>
-		<finalName>criptografia-entidades</finalName>
+		<finalName>criptografia-cripto</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -29,7 +28,6 @@
 			</plugin>
 		</plugins>
 	</build>
-
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -37,5 +35,4 @@
 			<version>4.12</version>
 		</dependency>
 	</dependencies>
-
 </project>

@@ -3,25 +3,27 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>nom.brunokarpo</groupId>
-	<artifactId>criptografia-ci-root</artifactId>
+	<artifactId>criptografiaRoot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<packaging>pom</packaging>
-	<name>Criptografia CI Root</name>
+
+	<name>Criptografia Root</name>
+	<description>Projeto Raiz do Projeto de Criptografia.</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
 	<build>
-		<finalName>criptografia-ci-root</finalName>
+		<finalName>criptografia-root</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<source>1.7</source>
+					<target>1.7</target>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -29,5 +31,6 @@
 
 	<modules>
 		<module>entidades</module>
+		<module>criptografia</module>
 	</modules>
 </project>

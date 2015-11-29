@@ -8,16 +8,15 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>entidades</artifactId>
-
-	<name>Criptografia - Entidades</name>
+	<artifactId>negocio</artifactId>
+	<name>Criptografia - Negocio</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
 	<build>
-		<finalName>criptografia-entidades</finalName>
+		<finalName>criptografia-cripto</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -36,6 +35,15 @@
 			<artifactId>junit</artifactId>
 			<version>4.12</version>
 		</dependency>
+		<dependency>
+			<groupId>nom.brunokarpo</groupId>
+			<artifactId>entidades</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>nom.brunokarpo</groupId>
+			<artifactId>criptografia</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
-
 </project>
