@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>nom.brunokarpo</groupId>
-	<artifactId>criptograia-ci-root</artifactId>
+	<artifactId>criptografia-ci-root</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<packaging>pom</packaging>
@@ -26,4 +26,8 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<modules>
+		<module>entidades</module>
+	</modules>
 </project>
