@@ -32,5 +32,6 @@
 	<modules>
 		<module>entidades</module>
 		<module>criptografia</module>
+		<module>negocio</module>
 	</modules>
 </project>

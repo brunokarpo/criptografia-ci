@@ -37,11 +37,24 @@ public class Pessoa {
 				&& !"f".equals(sexo.toLowerCase())) {
 			throw new SexoInvalidoException();
 		}
-		this.sexo = sexo;
+		this.sexo = sexo.toUpperCase();
 	}
 
 	public String getSexo() {
-		return sexo;
+		return sexo.toUpperCase();
 	}
 
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+
+		sb.append("nome=")
+			.append(getNome() + "\n")
+			.append("idade=")
+			.append(getIdade() + "\n")
+			.append("sexo=")
+			.append(getSexo());
+
+		return sb.toString();
+	}
 }

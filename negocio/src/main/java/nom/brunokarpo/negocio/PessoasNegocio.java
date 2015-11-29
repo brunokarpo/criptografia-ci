@@ -6,7 +6,7 @@ import java.security.NoSuchAlgorithmException;
 import javax.crypto.BadPaddingException;
 
 import nom.brunokarpo.criptografia.GerenciadorChaves;
-import nom.brunokarpo.entidades.Pessoa;
+import nom.brunokarpo.entidade.Pessoa;
 import nom.brunokarpo.repositorio.Pessoas;
 
 public class PessoasNegocio {

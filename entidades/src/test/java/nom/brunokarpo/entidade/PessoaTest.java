@@ -1,5 +1,6 @@
 package nom.brunokarpo.entidade;
 
+import static org.junit.Assert.*;
 import nom.brunokarpo.exceptions.IdadeInvalidaException;
 import nom.brunokarpo.exceptions.NomeInvalidoException;
 import nom.brunokarpo.exceptions.SexoInvalidoException;
@@ -13,8 +14,12 @@ public class PessoaTest {
 	private Pessoa sut;
 
 	@Before
-	public void init() {
+	public void init() throws Exception {
 		sut = new Pessoa();
+
+		sut.setNome("Bruno");
+		sut.setIdade(25);
+		sut.setSexo("M");
 	}
 
 	@Test(expected=NomeInvalidoException.class)
@@ -30,5 +35,16 @@ public class PessoaTest {
 	@Test(expected=SexoInvalidoException.class)
 	public void sexo_deve_ser_m_ou_f() throws Exception {
 		sut.setSexo("V");
+	}
+
+	@Test
+	public void deve_retornar_dados_pessoa_em_formato_properties() throws Exception {
+		StringBuilder sb = new StringBuilder();
+
+		sb.append("nome=Bruno\n")
+			.append("idade=25\n")
+			.append("sexo=M");
+
+		assertEquals(sb.toString(), sut.toString());
 	}
 }

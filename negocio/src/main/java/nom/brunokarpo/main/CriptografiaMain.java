@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import javax.crypto.BadPaddingException;
 
-import nom.brunokarpo.entidades.Pessoa;
+import nom.brunokarpo.entidade.Pessoa;
 import nom.brunokarpo.exceptions.IdadeInvalidaException;
 import nom.brunokarpo.exceptions.NomeInvalidoException;
 import nom.brunokarpo.exceptions.SexoInvalidoException;
@@ -25,7 +25,7 @@ public class CriptografiaMain {
 			capturarIdade(entrada, p);
 			capturarSexo(entrada, p);
 
-			negocio.guardarSeguro(p);
+			System.out.println(negocio.guardarSeguro(p));
 		}
 
 		for(int i = 0; i < 5; i++) {
