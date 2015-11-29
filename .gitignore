@@ -1,0 +1,6 @@
+# Ignorando arquivos de configuração de ambiente
+.*
+!.gitignore
+
+# Ignorar a pasta de compilados.
+*/target/*
